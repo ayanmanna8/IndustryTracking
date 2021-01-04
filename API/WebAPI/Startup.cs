@@ -33,7 +33,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             var builderDbContext = new DbContextOptionsBuilder<DBContext>()
-                    .UseMySql(Configuration.GetConnectionString("ATASPHERE_DB"),
+                    .UseMySql(Configuration.GetConnectionString("DBConnectionString"),
                     b => b.MigrationsAssembly("DAL"));
             services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<WebAPI.Services.IUserService, UserService>();
@@ -48,7 +48,7 @@ namespace WebAPI
                       })
                       .Execute(() => context.Database.MigrateAsync().GetAwaiter().GetResult());
             }
-            services.AddDbContext<DBContext>(options => { options.UseMySql(Configuration.GetConnectionString("ATASPHERE_DB")); });
+            services.AddDbContext<DBContext>(options => { options.UseMySql(Configuration.GetConnectionString("DBConnectionString")); });
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 8;
@@ -66,7 +66,7 @@ namespace WebAPI
                 {
                     Title = "Web API",
                     Version = "v1",
-                    Description = "Atasphere Web API",
+                    Description = "Web API",
                 });
 
             });
