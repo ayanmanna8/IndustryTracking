@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DAL;
 
 namespace WebAPI
 {
@@ -27,6 +29,13 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
+            var builderDbContext = new DbContextOptionsBuilder<AppDBContext>()
+                     .UseMySQL((Configuration.GetConnectionString("APP_DB")),
+                     b => b.MigrationsAssembly("DAL"));
+            using (var context = new AppDBContext(builderDbContext.Options))
+            {
+                context.Database.MigrateAsync().GetAwaiter().GetResult();
+            }
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
