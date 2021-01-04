@@ -1,0 +1,15 @@
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\net5.0\DAL.deps.json
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\net5.0\DAL.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\net5.0\ref\DAL.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\net5.0\DAL.pdb
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\net5.0\Domain.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\net5.0\Domain.pdb
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.csprojAssemblyReference.cache
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.csproj.CopyComplete
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\ref\DAL.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\net5.0\DAL.pdb
