@@ -1,0 +1,15 @@
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+D:\Projects\IndustryTracking\IndustryTracking\API\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache
