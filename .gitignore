@@ -6,3 +6,6 @@
 /API/Domain/obj
 /API/WebAPI/WebAPI/bin/Debug/net5.0/Logs
 /API/WebAPI/WebAPI/obj
+/API/DAL/bin/Debug/net5.0
+/API/Domain/bin/Debug/net5.0
+/API/WebAPI/WebAPI/bin/Debug/net5.0
