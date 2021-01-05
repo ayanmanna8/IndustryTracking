@@ -4,12 +4,10 @@
 
 /API/DAL/obj
 /API/Domain/obj
-/API/WebAPI/WebAPI/bin/Debug/net5.0/Logs
+/API/WebAPI/WebAPI/bin
 /API/WebAPI/WebAPI/obj
-/API/DAL/bin/Debug/net5.0
-/API/Domain/bin/Debug/net5.0
-/API/WebAPI/WebAPI/bin/Debug/net5.0
-/API/WebAPI/.vs/WebAPI/DesignTimeBuild
-/.vs/IndustryTracking/v16
+/API/DAL/bin
+/API/Domain/bin
+/API/WebAPI/WebAPI/bin
 /.vs
-/API/WebAPI/.vs/WebAPI/v16
+/API/WebAPI/.vs
