@@ -13,14 +13,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DAL;
+using System.IO;
 
 namespace WebAPI
 {
     public class Startup
     {
+        private  ILogger<Startup> _Log;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //_Log = new ILogger<Startup>();
         }
 
         public IConfiguration Configuration { get; }
@@ -28,10 +31,11 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+           
             var builderDbContext = new DbContextOptionsBuilder<AppDBContext>()
-                     .UseMySQL((Configuration.GetConnectionString("APP_DB")),
+                     .UseMySql((Configuration.GetConnectionString("APP_DB")),
                      b => b.MigrationsAssembly("DAL"));
+            //Build DB Schema
             using (var context = new AppDBContext(builderDbContext.Options))
             {
                 context.Database.MigrateAsync().GetAwaiter().GetResult();
@@ -41,11 +45,14 @@ namespace WebAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
             });
+            _Log = services.BuildServiceProvider().GetRequiredService<ILogger<Startup>>();
+            _Log.LogInformation("TEST");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> log)
         {
+            log.LogInformation("Configure");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
