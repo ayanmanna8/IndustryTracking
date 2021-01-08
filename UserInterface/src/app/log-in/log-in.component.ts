@@ -9,6 +9,7 @@ export class LogInComponent implements OnInit {
 
   username = '';
   password = '';
+  hide = true;
   constructor() { }
 
   ngOnInit(): void {
