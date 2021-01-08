@@ -84,6 +84,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatAutocompleteModule,
     ReactiveFormsModule,
     FormsModule,
+    MatIconModule,
   ],
   exports: [
     A11yModule,
